@@ -2,7 +2,7 @@ version: '3'
 services: 
   mysqlnode1:
     build:
-      context: server-image 
+      context: image 
     env_file: server.env
     ports:
       - "3301:3306"
@@ -23,7 +23,7 @@ services:
 
   mysqlnode2:
     build:
-      context: server-image 
+      context: image 
     env_file: server.env
     ports: 
       - "3302:3306"
@@ -44,7 +44,7 @@ services:
 
   mysqlnode3:
     build:
-     context: server-image 
+     context: image 
     env_file: server.env
     ports: 
       - "3303:3306"
